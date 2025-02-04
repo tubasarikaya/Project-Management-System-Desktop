@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5C8B341-CF2F-48C9-AB7C-E83F9B8190DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjectManagementApplication</RootNamespace>
+    <AssemblyName>ProjectManagementApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProjeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjeEkle.Designer.cs">
+      <DependentUpon>ProjeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GörevEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GörevEkle.Designer.cs">
+      <DependentUpon>GörevEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle.Designer.cs">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÇalışanSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÇalışanSayfası.Designer.cs">
+      <DependentUpon>ÇalışanSayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Güncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Güncelle.Designer.cs">
+      <DependentUpon>Güncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManagementSystemDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectManagementSystemDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjeSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjeSayfası.Designer.cs">
+      <DependentUpon>ProjeSayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ÇalışanProjeDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÇalışanProjeDetay.Designer.cs">
+      <DependentUpon>ÇalışanProjeDetay.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ProjeEkle.resx">
+      <DependentUpon>ProjeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GörevEkle.resx">
+      <DependentUpon>GörevEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle.resx">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÇalışanSayfası.resx">
+      <DependentUpon>ÇalışanSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Güncelle.resx">
+      <DependentUpon>Güncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjeSayfası.resx">
+      <DependentUpon>ProjeSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ÇalışanProjeDetay.resx">
+      <DependentUpon>ÇalışanProjeDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ProjectManagementSystemDBDataSet.xsc">
+      <DependentUpon>ProjectManagementSystemDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectManagementSystemDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectManagementSystemDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectManagementSystemDBDataSet.xss">
+      <DependentUpon>ProjectManagementSystemDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
